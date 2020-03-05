@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SpaceX</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="layout.css">
+		<!-- Jquery needed -->
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		 <script src="https://www.amcharts.com/lib/4/core.js"></script>
+<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/dataviz.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+	</head>
+	<body>
+		<!-- Hier komt de code voor de sticky menu balk -->
+		<header>
+			<nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">SpaceX</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                	<li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Extra info</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <!-- Hier komt de code voor de content op de home pagina -->
+    <section class="home">
+    </section>
+    <div style="height: 1000px">
+    	<section class="columns"></section>
+			<section class="columns">
+			    <div class="column">
+			      <h2>Speed</h2>
+			      	<p>This gauge chart shows the speed of the spaceship. When the spaceships takes off it is speed will increase. It is important to stay seated. SpaceX wishes you a pleasant journey through space.
+			     	</p>
+			     	<div id="chartdiv"></div>
+			    </div>
+
+			    <div class="column">
+			    	<h2>Stocks</h2>
+			    	<p>Your food and water capacity is sufficient.</p>
+			      	
+			      	<table class="columns">
+      					<tr>
+       					 	<td><div id="donut_single" style = "width: 200px;"></div></td>
+       					 	<td><div id="donut_single1" style = "width: 200px;"></div></td>
+     					</tr>
+  					</table> 	
+			    </div>
+
+			    <div class="column">
+			    	<h2>Distance traveled in hours</h2>
+			    	<p>This line charts shows the traveled distance in miles per hour.</p>
+			    	<table id ="curve">
+			    		<tr>
+			   				<td><div id = "curve_chart" style="width: 400px;"></div></td>
+			  			</tr>
+			  		</table>
+			    </div>
+  			</section>
+    	</div>
+	</body>
+</html>
+
+
+
+
+
+ 
